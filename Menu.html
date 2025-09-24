@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicesumar - Ambiente Virtual de Aprendizagem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Menu.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+        </header>
+        <div class="main-content-container">
+            <aside class="sidebar">
+                <div class="logo-container">
+                    <img src="https://drive.google.com/thumbnail?id=1SDbOgmt7wdqPOfMeaJrZDOYsrwaMq7jK&sz=w1000" alt="Unicesumar Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active"><i class="fas fa-home"></i> Início</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> ?</a></li>
+                        <li><a href="#"><i class="fas fa-graduation-cap"></i> ?</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> ?</a></li>
+                        <li><a href="#"><i class="fas fa-medal"></i> ?</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="main-content">
+                <section class="top-banner">
+                    <div class="course-banner">
+                        <div class="course-text">
+                            <h3>CURSO GRATUITO</h3>
+                            <h1>Invista em Você</h1>
+                            <p>Gestão financeira<br>Investimentos<br>Planejamento</p>
+                            <span>Inscrições: 26/08 a 26/09.</span>
+                            <button class="access-btn">ACESSE</button>
+                        </div>
+                        <div class="partner-logos">
+                        </div>
+                    </div>
+                    <div class="prepare-banner">
+                        <div class="prepare-text">
+                            <h3>ACESSAR</h3>
+                            <h2>DEMANDA</h2>
+                        </div>
+                        <div class="prepare-link">
+                            <button class="prepare-btn">Acesse aqui sua Demanda</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="content-body">
+                    <div class="disciplinas-section">
+                        <h4>DISCIPLINAS MATRICULADAS</h4>
+                        <p class="disciplinas-info">Acesso às aulas ao vivo, atividades, fórum, materiais complementares e outros.</p>
+                        <div class="disciplinas-table">
+                            <div class="table-header">
+                                <span>DISCIPLINAS ATUAIS</span>
+                                <span>INÍCIO</span>
+                                <span>MÓDULO</span>
+                            </div>
+                            <div class="table-row">
+                                <div class="disciplina-info">
+                                    <span>ATIV INTEGRADORA ESPECIFICA 2</span>
+                                    <span class="status-badge adaptacao">ADAPTAÇÃO</span>
+                                </div>
+                                <span class="start-date">09/06/2023</span>
+                                <span class="module-info">2025 / S2</span>
+                            </div>
+                            <div class="table-row">
+                                <div class="disciplina-info">
+                                    <span>ATIV INTEGRADORA COMUM 3</span>
+                                    <span class="status-badge adaptacao">ADAPTAÇÃO</span>
+                                </div>
+                                <span class="start-date">09/06/2023</span>
+                                <span class="module-info">2025 / S2</span>
+                            </div>
+                            <div class="table-row">
+                                <div class="disciplina-info">
+                                    <span>GESTÃO ESPORTIVA</span>
+                                </div>
+                                <span class="start-date">09/06/2023</span>
+                                <span class="module-info">2025 / S2</span>
+                            </div>
+                            <div class="table-footer">
+                                <a href="#">Ir para lista de disciplinas <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="disciplinas-section">
+                        <h4>PRÓXIMAS REUNIÕES</h4>
+                        <p class="disciplinas-info">Fique por dentro das próximas reuniões e encontros.</p>
+                        <div class="disciplinas-table" id="reunioes-table">
+                            <div class="table-header">
+                                <span>ASSUNTO</span>
+                                <span>DATA</span>
+                            </div>
+                            </div>
+                    </div>
+                    
+                    <div class="right-column-cards">
+                        <div class="action-card disciplinas-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="card-text">
+                                <h4>Ingresso</h4>
+                                <p>Aline Kelly Carrara Silva Dutra</p>
+                            </div>
+                        </div>
+                        <div class="action-card falar-mediador-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="card-text">
+                                <h4>Emissão</h4>
+                                <p>Marcus Stander</p>
+                            </div>
+                        </div>
+                        <div class="action-card arquivos-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="card-text">
+                                <h4>Validação</h4>
+                                <p>Marcus Stander</p>
+                            </div>
+                        </div>
+                        <div class="action-card arquivos-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="card-text">
+                                <h4>Educação Continuada</h4>
+                                <p>Luan Henrique De Miranda</p>
+                            </div>
+                        </div>
+                        <div class="action-card eu-indico-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="card-text">
+                                <h4>Desenvolvimento & Qualidade</h4>
+                                <p>Mayara Aparecida De Paula</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const urlCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfhY_LK8naowI7yx1TaQb3ubGAVoxWxFWi00rBKt3T48k5yuZxg792oIVWM2yQG66N8kjPIFnA1Q45/pub?output=csv&gid=1052202567';
+
+async function carregarDados() {
+    try {
+        const response = await fetch(urlCSV);
+        const data = await response.text();
+        const resultado = Papa.parse(data, { header: false, skipEmptyLines: true });
+
+        const reunioesTable = document.querySelector('#reunioes-table');
+        // Clear old rows, but keep the header
+        const oldRows = reunioesTable.querySelectorAll('.table-row');
+        oldRows.forEach(row => row.remove());
+
+        // Start the loop from the second row to skip the header
+        for (let i = 1; i < resultado.data.length; i++) {
+            const colunas = resultado.data[i];
+            const rowDiv = document.createElement('div');
+            rowDiv.className = 'table-row';
+
+            const assuntoSpan = document.createElement('span');
+            assuntoSpan.textContent = colunas[0] || '';
+            
+            const dataSpan = document.createElement('span');
+            dataSpan.textContent = colunas[1] || '';
+
+            rowDiv.appendChild(assuntoSpan);
+            rowDiv.appendChild(dataSpan);
+            
+            reunioesTable.appendChild(rowDiv);
+        }
+    } catch (err) {
+        console.error('Erro ao carregar dados:', err);
+    }
+}
+
+  carregarDados();
+  setInterval(carregarDados, 10000);
+    </script>
+</body>
+</html>
