@@ -95,7 +95,7 @@ body {
 /* --- SEÇÃO DE BANNERS E CARROSSEL --- */
 .top-banner {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
 }
@@ -109,7 +109,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centraliza verticalmente */
+  align-items: center;
   text-align: center;
 }
 
@@ -164,7 +164,7 @@ body {
 /* --- ESTILO DO CARROSSEL FINALIZADO --- */
 .carousel-container {
   position: relative;
-  width: 50%;
+  width: 100%;
   height: auto;
   max-height: 350px;
   overflow: hidden;
@@ -185,6 +185,7 @@ body {
   position: relative;
   flex-shrink: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -210,8 +211,9 @@ body {
   z-index: 1;
   backdrop-filter: blur(5px);
   text-shadow: none;
-  white-space: nowrap;
   text-align: center;
+  /* Removido: white-space: nowrap; */
+  width: 90%; /* Adicionado para limitar a largura em telas grandes */
 }
 
 /* --- BOTÕES DO CARROSSEL FINALIZADO --- */
