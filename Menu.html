@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicesumar - Ambiente Virtual de Aprendizagem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <header></header>
+    <div class="main-content-container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="https://drive.google.com/thumbnail?id=1SDbOgmt7wdqPOfMeaJrZDOYsrwaMq7jK&sz=w1000" alt="Unicesumar Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> ???</a></li>
+                    <li><a href="#"><i class="fas fa-graduation-cap"></i> Supervisores</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> Créditos</a></li>
+                    <li><a href="#"><i class="fas fa-medal"></i> ?</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section class="top-banner">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carousel-track">
+                    </div>
+                    <button class="carousel-nav-btn prev" id="prev-btn">❮</button>
+                    <button class="carousel-nav-btn next" id="next-btn">❯</button>
+                </div>
+                <div class="prepare-banner">
+                    <div class="prepare-text">
+                        <h3>ACESSAR</h3>
+                        <h2>DEMANDA</h2>
+                    </div>
+                    <div class="prepare-link">
+                        <button class="prepare-btn">Acesse aqui sua Demanda</button>
+                    </div>
+                </div>
+            </section>
+            <div class="content-body">
+                <div class="disciplinas-section">
+                    <h4>DISCIPLINAS MATRICULADAS</h4>
+                    <p class="disciplinas-info">Acesso às aulas ao vivo, atividades, fórum, materiais complementares e outros.</p>
+                    <div class="disciplinas-table">
+                        <div class="table-header">
+                            <span>DISCIPLINAS ATUAIS</span>
+                            <span>INÍCIO</span>
+                            <span>MÓDULO</span>
+                        </div>
+                        <div class="table-row">
+                            <div class="disciplina-info">
+                                <span>ATIV INTEGRADORA ESPECIFICA 2</span>
+                                <span class="status-badge adaptacao">ADAPTAÇÃO</span>
+                            </div>
+                            <span class="start-date">09/06/2023</span>
+                            <span class="module-info">2025 / S2</span>
+                        </div>
+                        <div class="table-row">
+                            <div class="disciplina-info">
+                                <span>ATIV INTEGRADORA COMUM 3</span>
+                                <span class="status-badge adaptacao">ADAPTAÇÃO</span>
+                            </div>
+                            <span class="start-date">09/06/2023</span>
+                            <span class="module-info">2025 / S2</span>
+                        </div>
+                        <div class="table-row">
+                            <div class="disciplina-info">
+                                <span>GESTÃO ESPORTIVA</span>
+                            </div>
+                            <span class="start-date">09/06/2023</span>
+                            <span class="module-info">2025 / S2</span>
+                        </div>
+                        <div class="table-footer">
+                            <a href="#">Ir para lista de disciplinas <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="disciplinas-section">
+                    <h4>PRÓXIMAS REUNIÕES</h4>
+                    <p class="disciplinas-info">Fique por dentro das próximas reuniões e encontros.</p>
+                    <div class="disciplinas-table" id="reunioes-table">
+                        <div class="table-header">
+                            <span>ASSUNTO</span>
+                            <span>DATA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-column-cards">
+                    <div class="action-card disciplinas-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="card-text">
+                            <h4>Ingresso</h4>
+                            <p>Aline Kelly Carrara Silva Dutra</p>
+                        </div>
+                    </div>
+                    <div class="action-card falar-mediador-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="card-text">
+                            <h4>Emissão</h4>
+                            <p>Marcus Stander</p>
+                        </div>
+                    </div>
+                    <div class="action-card arquivos-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="card-text">
+                            <h4>Validação</h4>
+                            <p>Marcus Stander</p>
+                        </div>
+                    </div>
+                    <div class="action-card arquivos-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="card-text">
+                            <h4>Educação Continuada</h4>
+                            <p>Luan Henrique De Miranda</p>
+                        </div>
+                    </div>
+                    <div class="action-card eu-indico-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="card-text">
+                            <h4>Desenvolvimento & Qualidade</h4>
+                            <p>Mayara Aparecida De Paula</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        const urlCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfhY_LK8naowI7yx1TaQb3ubGAVoxWxFWi00rBKt3T48k5yuZxg792oIVWM2yQG66N8kjPIFnA1Q45/pub?output=csv&gid=1052202567';
+        const carouselCSVUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfhY_LK8naowI7yx1TaQb3ubGAVoxWxFWi00rBKt3T48k5yuZxg792oIVWM2yQG66N8kjPIFnA1Q45/pub?output=csv&gid=113688378';
+
+        let slideIndex = 0;
+        const track = document.getElementById('carousel-track');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        async function loadCarouselData() {
+            try {
+                const response = await fetch(carouselCSVUrl);
+                const data = await response.text();
+                const result = Papa.parse(data, { header: false, skipEmptyLines: true });
+
+                track.innerHTML = '';
+                if (result.data.length <= 1) {
+                    track.innerHTML = '<div class="carousel-slide"><div class="carousel-caption">Nenhuma foto encontrada.</div></div>';
+                } else {
+                    result.data.slice(1).forEach(row => {
+                        const imgUrl = row[0];
+                        const date = row[1];
+                        if (imgUrl) {
+                            const slide = document.createElement('div');
+                            slide.className = 'carousel-slide';
+                            const img = document.createElement('img');
+                            img.src = imgUrl;
+                            slide.appendChild(img);
+                            if (date) {
+                                const caption = document.createElement('div');
+                                caption.className = 'carousel-caption';
+                                caption.textContent = date;
+                                slide.appendChild(caption);
+                            }
+                            track.appendChild(slide);
+                        }
+                    });
+                    showSlide(slideIndex);
+                }
+            } catch (err) {
+                console.error('Erro ao carregar fotos:', err);
+                track.innerHTML = '<div class="carousel-slide"><div class="carousel-caption">Erro ao carregar dados. Tente novamente mais tarde.</div></div>';
+            }
+        }
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            if (slides.length === 0) return;
+            if (index >= slides.length) slideIndex = 0;
+            if (index < 0) slideIndex = slides.length - 1;
+            track.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlide(slideIndex);
+        }
+
+        prevBtn.addEventListener('click', () => {
+            slideIndex--;
+            showSlide(slideIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            slideIndex++;
+            showSlide(slideIndex);
+        });
+
+        async function carregarDados() {
+            try {
+                const response = await fetch(urlCSV);
+                const data = await response.text();
+                const resultado = Papa.parse(data, { header: false, skipEmptyLines: true });
+
+                const reunioesTable = document.querySelector('#reunioes-table');
+                const oldRows = reunioesTable.querySelectorAll('.table-row');
+                oldRows.forEach(row => row.remove());
+
+                if (resultado.data.length <= 1) {
+                    const noMeetingsRow = document.createElement('div');
+                    noMeetingsRow.className = 'table-row no-data-row';
+                    const messageSpan = document.createElement('span');
+                    messageSpan.textContent = 'Sem Reuniões agendadas no momento';
+                    messageSpan.style.textAlign = 'center';
+                    messageSpan.style.gridColumn = '1 / -1';
+                    noMeetingsRow.appendChild(messageSpan);
+                    reunioesTable.appendChild(noMeetingsRow);
+                } else {
+                    for (let i = 1; i < resultado.data.length; i++) {
+                        const colunas = resultado.data[i];
+                        const rowDiv = document.createElement('div');
+                        rowDiv.className = 'table-row';
+
+                        const assuntoSpan = document.createElement('span');
+                        assuntoSpan.textContent = colunas[0] || '';
+                        
+                        const dataSpan = document.createElement('span');
+                        dataSpan.textContent = colunas[1] || '';
+
+                        rowDiv.appendChild(assuntoSpan);
+                        rowDiv.appendChild(dataSpan);
+                        
+                        reunioesTable.appendChild(rowDiv);
+                    }
+                }
+            } catch (err) {
+                console.error('Erro ao carregar dados:', err);
+                const reunioesTable = document.querySelector('#reunioes-table');
+                const oldRows = reunioesTable.querySelectorAll('.table-row');
+                oldRows.forEach(row => row.remove());
+                const errorRow = document.createElement('div');
+                errorRow.className = 'table-row no-data-row';
+                const errorMessageSpan = document.createElement('span');
+                errorMessageSpan.textContent = 'Erro ao carregar dados. Tente novamente mais tarde.';
+                errorMessageSpan.style.textAlign = 'center';
+                errorMessageSpan.style.gridColumn = '1 / -1';
+                errorRow.appendChild(errorMessageSpan);
+                reunioesTable.appendChild(errorRow);
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            carregarDados();
+            loadCarouselData();
+            setInterval(carregarDados, 3000);
+            setInterval(nextSlide, 3000);
+        });
+    </script>
+</body>
+</html>
