@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organograma da Secretaria Acadêmica</title>
+    <link rel="stylesheet" href="Demanda.css">
+</head>
+<body>
+
+    <div id="organogramaContainer" class="organograma-visivel-direto">
+        <div class="organograma">
+            <div class="node top-level">
+                <div class="box main-level">
+                    <img src="https://drive.google.com/thumbnail?id=1SDbOgmt7wdqPOfMeaJrZDOYsrwaMq7jK&sz=w1000" alt="Logo Secretaria Acadêmica" class="logo-image">
+                    <div class="name">Secretaria Acadêmica</div>
+                    <div class="title">Marcus Stander</div>
+                </div>
+            </div>
+
+            <div class="children-nodes">
+                <div class="node">
+                    <div class="box child-level">
+                        <div class="name">Ingresso</div>
+                        <div class="person">Aline Kelly Carrara Silva Dutra</div>
+                    </div>
+                </div>
+                <div class="node">
+                    <div class="box child-level">
+                        <div class="name">Emissão</div>
+                        <div class="person">Marcus Stander</div>
+                    </div>
+                </div>
+                <div class="node">
+                    <div class="box child-level">
+                        <div class="name">Validação</div>
+                        <div class="person">Marcus Stander</div>
+                    </div>
+                </div>
+                
+                <div class="node node-has-sub-vertical" id="nodeEducacaoWrapper">
+                    <div class="box child-level clickable-box" id="boxEducacao">
+                        <div class="name">Educação Continuada</div>
+                        <div class="person">Luan Henrique De Miranda</div>
+                    </div>
+                    
+                    <div class="sub-organograma-vertical sub-hidden" id="subOrganogramaEducacao">
+                        <div class="node sub-vertical-node">
+                            <div class="box sub-level">
+                                <div class="name">POS</div>
+                                <div class="person">Posição Estratégica</div>
+                            </div>
+                        </div>
+                        <div class="node sub-vertical-node">
+                            <div class="box sub-level">
+                                <div class="name">TDF</div>
+                                <div class="person">Desenvolvimento e Mentoria</div>
+                            </div>
+                        </div>
+                        <div class="node sub-vertical-node">
+                            <div class="box sub-level">
+                                <div class="name">SAE</div>
+                                <div class="person">Suporte Estratégico</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="node">
+                    <div class="box child-level">
+                        <div class="name">Desenvolvimento & Qualidade</div>
+                        <div class="person">Mayara Aparecida De Paula</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const box = document.getElementById('boxEducacao');
+            const subOrganograma = document.getElementById('subOrganogramaEducacao');
+            const wrapperNode = document.getElementById('nodeEducacaoWrapper');
+
+            // Função para alternar a visibilidade do sub-organograma
+            box.addEventListener('click', (event) => {
+                event.stopPropagation();
+                
+                // Alterna a classe de ocultação/exibição
+                subOrganograma.classList.toggle('sub-hidden');
+                
+                // Alterna classes de estilo e linha
+                box.classList.toggle('active-box');
+                wrapperNode.classList.toggle('sub-open'); 
+            });
+        });
+    </script>
+
+</body>
+</html>

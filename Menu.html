@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicesumar - Ambiente Virtual de Aprendizagem</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Menu.css"> 
+</head>
+
+<body>
+    <header></header>
+
+    <div class="main-content-container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="https://drive.google.com/thumbnail?id=1SDbOgmt7wdqPOfMeaJrZDOYsrwaMq7jK&sz=w1000"
+                    alt="Unicesumar Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#"><i class="fas fa-robot"></i> ChatBot</a></li>
+                    <li><a href="#"><i class="fas fa-user-tie"></i> Supervisores</a></li>
+                    <li><a href="Creditos.html"><i class="fas fa-book"></i> Créditos</a></li>
+                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Treinamentos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content" style="min-height: 150vh;">
+
+            <section class="image-banner"
+                style="background: url('https://www.unicesumar.edu.br/wp-content/uploads/2017/05/Campus-sede-Unicesumar_Maring--.PR_.jpg') center center / cover no-repeat; height: 280px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.05);">
+            </section>
+
+            <section class="top-banner">
+                <div class="prepare-banner">
+                    <div class="prepare-text" style="text-align: center; width: 100%;">
+                        <h2 style="font-size: 2.5rem;">ATENDIMENTO AO ALUNO</h2>
+                    </div>
+                    <div class="prepare-link">
+                        <a href="Demanda.html"><button class="prepare-btn">Clique aqui</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="content-body">
+
+                <div class="disciplinas-content-area">
+
+                    <div class="disciplinas-section" style="margin-top: 0;">
+                        <h4>DISCIPLINAS MATRICULADAS</h4>
+                        <p class="disciplinas-info">Acesse às aulas ao vivo, atividades, fórum, material complementar e
+                            outros.</p>
+                        <div class="disciplinas-table" id="disciplinas-table">
+                            <div class="table-header">
+                                <span>DISCIPLINAS ATUAIS</span>
+                                <span>INÍCIO</span>
+                                <span>MÓDULO</span>
+                            </div>
+                            <div class="table-body-scroll" style="max-height: 250px;">
+                                <div class="table-row">
+                                    <span>ESTÁGIO SUPERVISIONADO V <span class="status-badge adaptacao">CURRICULAR</span></span>
+                                    <span>21/07/2025</span>
+                                    <span>2025 / 53</span>
+                                </div>
+                                <div class="table-row">
+                                    <span>ATV INTEGRADORA ESPECÍFICA 3 <span class="status-badge adaptacao">CURRICULAR</span></span>
+                                    <span>21/07/2025</span>
+                                    <span>2025 / 53</span>
+                                </div>
+                                <div class="table-row">
+                                    <span>CAPOEIRA <span class="status-badge em-curso">OPTATIVA</span></span>
+                                    <span>01/07/2025</span>
+                                    <span>2025 / 53</span>
+                                </div>
+                                <div class="table-row">
+                                    <span>PRÁTICA DE ENSINO E CIDADANIA <span class="status-badge em-curso">REGULAR</span></span>
+                                    <span>01/07/2025</span>
+                                    <span>2025 / 53</span>
+                                </div>
+                            </div>
+                            <div class="table-footer">
+                                <a href="#">Ir para lista de disciplinas... <i class="fas fa-circle-info"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-sections-grid">
+
+                        <div class="disciplinas-section" style="margin-top: 0;">
+                            <h4>PRÓXIMAS REUNIÕES E ENCONTROS</h4>
+                            <p class="disciplinas-info">Fique por dentro das próximas reuniões e encontros.</p>
+                            <div class="disciplinas-table" id="reunioes-table">
+                                <div class="table-header">
+                                    <span>ASSUNTO</span>
+                                    <span>DATA</span>
+                                </div>
+                                <div class="table-body-scroll" id="reunioes-table-body">
+                                    <div class="table-row"><span>Treinamento de Novas Normas</span><span>10/10/2025</span></div>
+                                    <div class="table-row"><span>Reunião de Alinhamento Estratégico</span><span>15/10/2025</span></div>
+                                    <div class="table-row"><span>Apresentação de Resultados Q3</span><span>25/10/2025</span></div>
+                                    <div class="table-row"><span>Planejamento de Férias</span><span>05/11/2025</span></div>
+                                </div>
+                                <div class="table-footer">
+                                    <a href="#">Ver Calendário Completo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="disciplinas-section" style="margin-top: 0;">
+                            <h4>PRÓXIMOS EVENTOS</h4>
+                            <p class="disciplinas-info">Fique por dentro dos próximas eventos.</p>
+                            <div class="disciplinas-table" id="pendencias-table">
+                                <div class="table-header">
+                                    <span>ASSUNTO</span>
+                                    <span>DATA</span>
+                                </div>
+                                <div class="table-body-scroll" id="pendencias-table-body">
+                                    <div class="table-row">
+                                        <span>Revisão do Contrato RH</span>
+                                        <span class="status-badge pendente">Amanhã</span>
+                                    </div>
+                                    <div class="table-row">
+                                        <span>Aprovar Solicitação de Compra #102</span>
+                                        <span class="status-badge pendente">Hoje</span>
+                                    </div>
+                                    <div class="table-row">
+                                        <span>Relatório Mensal de Vendas</span>
+                                        <span class="status-badge em-curso">3 dias</span>
+                                    </div>
+                                    <div class="table-row">
+                                        <span>Feedback Treinamento Júpiter</span>
+                                        <span class="status-badge em-curso">1 semana</span>
+                                    </div>
+                                </div>
+                                <div class="table-footer">
+                                    <a href="#">Ver todos os eventos <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr class="divider">
+
+                </div>
+
+                <div class="right-column-cards">
+
+                    <a href="#" class="nav-card nav-disciplinas">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="card-text">
+                            <h4>Disciplinas</h4>
+                            <p>Matriculadas, pendentes e histórico</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nav-card nav-arquivos">
+                        <i class="fas fa-folder-open"></i>
+                        <div class="card-text">
+                            <h4>Arquivos</h4>
+                            <p>Arquivos gerais do curso</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nav-card nav-mediador">
+                        <i class="fas fa-comment-dots"></i>
+                        <div class="card-text">
+                            <h4>Fale com Mediador</h4>
+                            <p>Tire suas dúvidas</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="nav-card nav-indico">
+                        <i class="fas fa-thumbs-up"></i>
+                        <div class="card-text">
+                            <h4>Eu Indico</h4>
+                            <p>Você ganha e seus amigos também</p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="footer-carousels">
+                    <div class="carousels-container-grid">
+
+                        <div class="carousel-section-wrapper">
+                            <h4>Aniversariantes do Mês</h4>
+                            <div class="carousel-container small-carousel">
+                                <div class="carousel-track" id="birthdays-carousel-track">
+                                    <div class="carousel-slide">
+                                        <img src="https://i.ibb.co/L5191jS/geovana-aniversariante.jpg"
+                                            alt="Geovana Barcellos">
+                                        <div class="carousel-caption">Geovana Barcellos</div>
+                                    </div>
+                                </div>
+                                <button class="carousel-nav-btn prev" id="birthdays-prev-btn">❮</button>
+                                <button class="carousel-nav-btn next" id="birthdays-next-btn">❯</button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-section-wrapper">
+                            <h4>Mural de Fotos</h4>
+                            <div class="carousel-container small-carousel">
+                                <div class="carousel-track" id="carousel-track">
+                                    <div class="carousel-slide">
+                                        <img src="https://i.ibb.co/30282Jv/mural-foto-1.jpg" alt="Foto do Time 1">
+                                        <div class="carousel-caption">Reunião da Equipe - 2025</div>
+                                    </div>
+                                    <div class="carousel-slide">
+                                        <img src="https://i.ibb.co/4T41W9h/mural-foto-2.jpg" alt="Foto do Time 2">
+                                        <div class="carousel-caption">Treinamento e Integração</div>
+                                    </div>
+                                </div>
+                                <button class="carousel-nav-btn prev" id="prev-btn">❮</button>
+                                <button class="carousel-nav-btn next" id="next-btn">❯</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script>
+    // =================================================================
+    // 1. URLs DAS PLANILHAS
+    // =================================================================
+    const reunioesCSVUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfhY_LK8naowI7yx1TaQb3ubGAVoxWxFWi00rBKt3T48k5yuZxg792oIVWM2yQG66N8kjPIFnA1Q45/pub?output=csv&gid=1052202567'; // Reuniões
+    const carouselCSVUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfhY_LK8naowI7yx1TaQb3ubGAVoxWxFWi00rBKt3T48k5yuZxg792oIVWM2yQG66N8kjPIFnA1Q45/pub?output=csv&gid=113688378'; // Mural de Fotos
+    const birthdaysCSVUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfhY_LK8naowI7yx1TaQb3ubGAVoxWxFWi00rBKt3T48k5yuZxg792oIVWM2yQG66N8kjPIFnA1Q45/pub?output=csv&gid=2040587601'; // Aniversariantes
+    const pendenciasCSVUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfhY_LK8naowI7yx1TaQb3ubGAVoxWxFWi00rBKt3T48k5yuZxg792oIVWM2yQG66N8kjPIFnA1Q45/pub?output=csv&gid=630222686'; // Pendências Urgentes
+
+    // =================================================================
+    // 2. VARIÁVEIS DO CARROSSEL
+    // =================================================================
+    let slideIndex = 0;
+    const track = document.getElementById('carousel-track');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    let birthdaysSlideIndex = 0;
+    const birthdaysTrack = document.getElementById('birthdays-carousel-track');
+    const birthdaysPrevBtn = document.getElementById('birthdays-prev-btn');
+    const birthdaysNextBtn = document.getElementById('birthdays-next-btn');
+
+
+    // =================================================================
+    // 3. FUNÇÕES DE CARREGAMENTO DE DADOS (TODAS IGNORANDO A LINHA 1)
+    // =================================================================
+
+    // --- Mural de Fotos ---
+    async function loadCarouselData() {
+        try {
+            const response = await fetch(carouselCSVUrl);
+            const data = await response.text();
+            const result = Papa.parse(data, { header: false, skipEmptyLines: true });
+
+            // APLICA O SLICE: Ignora o cabeçalho se houver dados
+            const dataToUse = result.data.length > 1 ? result.data.slice(1) : [];
+
+            if (dataToUse.length > 0) {
+                track.innerHTML = '';
+                dataToUse.forEach(row => {
+                    const imgUrl = row[0];
+                    const date = row[1];
+                    if (imgUrl) {
+                        const slide = document.createElement('div');
+                        slide.className = 'carousel-slide';
+                        const img = document.createElement('img');
+                        img.src = imgUrl;
+                        slide.appendChild(img);
+                        if (date) {
+                            const caption = document.createElement('div');
+                            caption.className = 'carousel-caption';
+                            caption.textContent = date;
+                            slide.appendChild(caption);
+                        }
+                        track.appendChild(slide);
+                    }
+                });
+            }
+            const finalSlides = document.querySelectorAll('#carousel-track .carousel-slide');
+            if (finalSlides.length > 0) showSlide(slideIndex);
+            else track.innerHTML = '<div class="carousel-slide"><div class="carousel-caption">Nenhuma foto encontrada.</div></div>';
+        } catch (err) {
+            console.error('Erro ao carregar fotos:', err);
+        }
+    }
+
+    function showSlide(index) {
+        const slides = document.querySelectorAll('#carousel-track .carousel-slide');
+        if (slides.length === 0) return;
+        if (index >= slides.length) slideIndex = 0;
+        if (index < 0) slideIndex = slides.length - 1;
+        track.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }
+
+
+    // --- Carrossel de Aniversariantes ---
+    async function loadBirthdaysData() {
+        try {
+            const response = await fetch(birthdaysCSVUrl);
+            const data = await response.text();
+            const result = Papa.parse(data, { header: false, skipEmptyLines: true });
+
+            // APLICA O SLICE: Ignora o cabeçalho se houver dados
+            const allPeopleData = result.data.length > 1 ? result.data.slice(1) : [];
+
+            const today = new Date();
+            const todayMonth = today.getMonth() + 1;
+
+            const birthdayPeople = allPeopleData.filter(row => {
+                const birthday = row[2];
+                if (!birthday) return false;
+                const parts = birthday.split('/');
+                if (parts.length < 2) return false;
+                const month = Number(parts[1]);
+                return month === todayMonth;
+            });
+
+            if (birthdayPeople.length > 0) {
+                birthdaysTrack.innerHTML = '';
+                birthdayPeople.forEach(row => {
+                    const name = row[0];
+                    const imgUrl = row[1];
+                    if (name && imgUrl) {
+                        const slide = document.createElement('div');
+                        slide.className = 'carousel-slide';
+                        const img = document.createElement('img');
+                        img.src = imgUrl;
+                        slide.appendChild(img);
+                        const caption = document.createElement('div');
+                        caption.className = 'carousel-caption';
+                        caption.innerHTML = `${name}`;
+                        slide.appendChild(caption);
+                        birthdaysTrack.appendChild(slide);
+                    }
+                });
+            }
+
+            const finalSlides = document.querySelectorAll('#birthdays-carousel-track .carousel-slide');
+            if (finalSlides.length > 0) showBirthdaysSlide(birthdaysSlideIndex);
+            else birthdaysTrack.innerHTML = '<div class="carousel-slide"><div class="carousel-caption">Sem aniversariantes neste mês.</div></div>';
+
+        } catch (err) {
+            console.error('Erro ao carregar aniversariantes:', err);
+        }
+    }
+
+    function showBirthdaysSlide(index) {
+        const slides = document.querySelectorAll('#birthdays-carousel-track .carousel-slide');
+        if (slides.length === 0) return;
+        if (index >= slides.length) birthdaysSlideIndex = 0;
+        if (index < 0) birthdaysSlideIndex = slides.length - 1;
+        birthdaysTrack.style.transform = `translateX(-${birthdaysSlideIndex * 100}%)`;
+    }
+
+    // --- Próximas Reuniões ---
+    async function carregarReunioes() {
+        try {
+            const response = await fetch(reunioesCSVUrl);
+            const data = await response.text();
+            const resultado = Papa.parse(data, { header: false, skipEmptyLines: true });
+
+            const reunioesTableBody = document.querySelector('#reunioes-table-body');
+            reunioesTableBody.innerHTML = '';
+
+            // APLICA O SLICE: Ignora o cabeçalho se houver dados
+            const reunioesData = resultado.data.length > 1 ? resultado.data.slice(1) : [];
+
+
+            if (reunioesData.length === 0) {
+                reunioesTableBody.innerHTML = '<div class="table-row no-data-row"><span style="text-align:center; grid-column:1/-1">Nenhuma reunião cadastrada.</span></div>';
+            } else {
+                reunioesData.forEach(colunas => {
+                    const rowDiv = document.createElement('div');
+                    rowDiv.className = 'table-row';
+
+                    const assuntoSpan = document.createElement('span');
+                    assuntoSpan.textContent = colunas[0] || 'Sem Assunto';
+
+                    const dataSpan = document.createElement('span');
+                    dataSpan.textContent = colunas[1] || 'Sem Data';
+
+                    rowDiv.appendChild(assuntoSpan);
+                    rowDiv.appendChild(dataSpan);
+
+                    reunioesTableBody.appendChild(rowDiv);
+                });
+            }
+        } catch (err) {
+            console.error('Erro ao carregar dados de reuniões:', err);
+            const reunioesTableBody = document.querySelector('#reunioes-table-body');
+            reunioesTableBody.innerHTML = '<div class="table-row no-data-row"><span style="text-align:center; grid-column:1/-1">Erro ao carregar dados. Tente novamente mais tarde.</span></div>';
+        }
+    }
+
+    // --- PENDÊNCIAS URGENTES ---
+    async function carregarPendencias() {
+        try {
+            const response = await fetch(pendenciasCSVUrl);
+            const data = await response.text();
+            const resultado = Papa.parse(data, { header: false, skipEmptyLines: true });
+
+            const pendenciasTableBody = document.querySelector('#pendencias-table-body');
+            pendenciasTableBody.innerHTML = '';
+
+            // APLICA O SLICE: Ignora o cabeçalho se houver dados
+            const pendenciasData = resultado.data.length > 1 ? resultado.data.slice(1) : [];
+
+
+            if (pendenciasData.length === 0) {
+                pendenciasTableBody.innerHTML = '<div class="table-row no-data-row"><span style="text-align:center; grid-column:1/-1">Nenhuma pendência cadastrada.</span></div>';
+            } else {
+                pendenciasData.forEach(colunas => {
+                    const rowDiv = document.createElement('div');
+                    rowDiv.className = 'table-row';
+
+                    const pendenciaSpan = document.createElement('span');
+                    pendenciaSpan.textContent = colunas[0] || 'Sem Pendência'; // Coluna A
+
+                    const prazoSpan = document.createElement('span');
+                    const prazoText = colunas[1] || 'Sem Prazo'; // Coluna B
+                    
+                    // Lógica para aplicar a classe de status
+                    const lowerCasePrazo = prazoText.toLowerCase();
+                    if (lowerCasePrazo.includes('hoje') || lowerCasePrazo.includes('amanhã') || lowerCasePrazo.includes('1 dia')) {
+                        prazoSpan.className = 'status-badge pendente';
+                    } else if (lowerCasePrazo.includes('dias') || lowerCasePrazo.includes('semana')) {
+                        prazoSpan.className = 'status-badge em-curso';
+                    }
+                    prazoSpan.textContent = prazoText;
+
+                    rowDiv.appendChild(pendenciaSpan);
+                    rowDiv.appendChild(prazoSpan);
+
+                    pendenciasTableBody.appendChild(rowDiv);
+                });
+            }
+        } catch (err) {
+            console.error('Erro ao carregar dados de pendências:', err);
+            const pendenciasTableBody = document.querySelector('#pendencias-table-body');
+            pendenciasTableBody.innerHTML = '<div class="table-row no-data-row"><span style="text-align:center; grid-column:1/-1">Erro ao carregar dados. Tente novamente mais tarde.</span></div>';
+        }
+    }
+
+
+    // =================================================================
+    // 4. EVENT LISTENERS E INICIALIZAÇÃO
+    // =================================================================
+    // Carrossel Listeners
+    prevBtn.addEventListener('click', () => { slideIndex--; showSlide(slideIndex); });
+    nextBtn.addEventListener('click', () => { slideIndex++; showSlide(slideIndex); });
+    birthdaysPrevBtn.addEventListener('click', () => { birthdaysSlideIndex--; showBirthdaysSlide(birthdaysSlideIndex); });
+    birthdaysNextBtn.addEventListener('click', () => { birthdaysSlideIndex++; showBirthdaysSlide(birthdaysSlideIndex); });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        carregarReunioes();
+        carregarPendencias();
+        loadCarouselData();
+        loadBirthdaysData();
+
+        // Auto-slides a cada 5 segundos
+        setInterval(() => { slideIndex++; showSlide(slideIndex); }, 5000);
+        setInterval(() => { birthdaysSlideIndex++; showBirthdaysSlide(birthdaysSlideIndex); }, 5000);
+
+        // Recarrega as tabelas de dados a cada 60 segundos
+        setInterval(carregarReunioes, 60000);
+        setInterval(carregarPendencias, 60000);
+    });
+</script>
